@@ -33,7 +33,7 @@
             bindings = <
 &kp EQUAL       &kp N1       &kp N2    &kp N3     &kp N4        &kp N5                                    &kp N6         &kp N7  &kp N8     &kp N9   &kp N0           &kp MINUS
 &kp DELETE      &kp Q        &kp W     &kp E      &kp R         &kp T                                     &kp Y          &kp U   &kp I      &kp O    &kp P            &kp BACKSLASH
-&kp BACKSPACE   &kp A        &kp S     &kp D      &kp F         &kp G                                     &kp H          &kp J   &kp K      &kp L    &kp SEMI         &kp SQT
+&kp BACKSPACE   &kp A        &kp S     &kp D      &kp F         &kp G                                     &kp H          &kp J   &kp K      &kp L    &lt 1 SEMI       &kp SQT
 &kp LEFT_SHIFT  &mt LCTRL Z  &kp X     &kp C      &kp V         &kp B        &kp LEFT_WIN  &kp RIGHT_WIN  &kp N          &kp M   &kp COMMA  &kp DOT  &mt RCTRL SLASH  &kp RIGHT_SHIFT
 &studio_unlock  &kp LCTRL    &kp LEFT  &kp RIGHT  &kp LEFT_ALT  &lt 4 SPACE  &lt 5 TAB     &kp ENTER      &kp RIGHT_ALT                              &none            &kp DELETE
             >;
