@@ -1,8 +1,9 @@
 #define DEFAULT 0
 #define SYM     1
-#define MOUSE   2 // Auto-Mouse Layer
-#define SCROLL  3 // Motion Scroll Layer
-#define SNIPE   4 // Snipe Mode Layer
+#define NUM     2
+#define MOUSE   3 // Auto-Mouse Layer
+#define SCROLL  4 // Motion Scroll Layer
+#define SNIPE   5 // Snipe Mode Layer
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
