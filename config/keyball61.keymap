@@ -33,16 +33,19 @@
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <25 34>;
+            require-prior-idle-ms = <150>;
         };
 
         back {
             bindings = <&mkp MB4>;
             key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
         };
 
         forward {
             bindings = <&mkp MB5>;
             key-positions = <19 20>;
+            require-prior-idle-ms = <150>;
         };
     };
 
