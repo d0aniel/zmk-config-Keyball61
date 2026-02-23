@@ -437,3 +437,7 @@ layers:
 combos:
 - p: [25, 34]
   k: '"'
+- p: [15, 16]
+  k: BACK
+- p: [19, 20]
+  k: FORWARD
