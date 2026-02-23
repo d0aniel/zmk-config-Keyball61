@@ -36,12 +36,12 @@
         };
 
         back {
-            bindings = <&kp K_BACK>;
+            bindings = <&mkp MB4>;
             key-positions = <15 16>;
         };
 
         forward {
-            bindings = <&kp K_FORWARD>;
+            bindings = <&mkp MB5>;
             key-positions = <19 20>;
         };
     };
