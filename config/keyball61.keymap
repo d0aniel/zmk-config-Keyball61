@@ -38,13 +38,13 @@
 
         back {
             bindings = <&mkp MB4>;
-            key-positions = <15 16>;
+            key-positions = <39 40>;
             require-prior-idle-ms = <200>;
         };
 
         forward {
             bindings = <&mkp MB5>;
-            key-positions = <19 20>;
+            key-positions = <45 46>;
             require-prior-idle-ms = <200>;
         };
     };
