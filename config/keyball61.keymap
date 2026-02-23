@@ -34,6 +34,16 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <25 34>;
         };
+
+        back {
+            bindings = <&kp K_BACK>;
+            key-positions = <15 16>;
+        };
+
+        forward {
+            bindings = <&kp K_FORWARD>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
