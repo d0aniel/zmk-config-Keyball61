@@ -28,10 +28,24 @@
 
 / {
     behaviors {
+        /* Sticky modifier for the home row mods' hold action: applies to the next
+         * keypress regardless of whether the mod key is still physically held, so
+         * releasing it before pressing the target letter still capitalizes it.
+         * quick-release deactivates on the next key's press rather than release,
+         * so fast typing after the modified letter doesn't get double-capitalized. */
+        sk_hrm: sticky_key_hrm {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <500>;
+            quick-release;
+            ignore-modifiers;
+        };
+
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&sk_hrm>, <&kp>;
             flavor = "balanced";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
@@ -42,7 +56,7 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&sk_hrm>, <&kp>;
             flavor = "balanced";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
