@@ -4,13 +4,17 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: d0aniel
       url-base: https://github.com/d0aniel
+    - name: tangbonze
+      url-base: https://github.com/tangbonze
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: d0aniel
+      # DIAGNOSTIC: temporarily back to the unpatched upstream driver to bisect
+      # the deep-sleep wake bug. Was remote: d0aniel, revision: main.
+      remote: tangbonze
       revision: main
   self:
     path: config
