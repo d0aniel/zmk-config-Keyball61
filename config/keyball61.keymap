@@ -1,9 +1,14 @@
+/* Layer indices. These are positional: they must match the order of the layer
+ * nodes inside the keymap block below, and the automouse-layer/scroll-layers/
+ * snipe-layers properties in keyball61_right.overlay. Reordering or inserting
+ * a layer node shifts every index after it. */
 #define DEFAULT 0
-#define SYM     1
-#define NUM     2
-#define MOUSE   3 // Auto-Mouse Layer
-#define SCROLL  4 // Motion Scroll Layer
-#define SNIPE   5 // Snipe Mode Layer
+#define NUM     1 // number_layer
+#define SYM     2 // symbol_layer
+#define FUN     3 // function_layer
+#define MOUSE   4 // Auto-Mouse Layer
+#define SCROLL  5 // Motion Scroll Layer
+#define SNIPE   6 // Snipe Mode Layer
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
